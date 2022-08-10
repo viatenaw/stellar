@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #0d0000, #2d1d1d);
+}
+.aim {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: black;
+    background: linear-gradient(to right, #0d0000, #2d1d1d);
+    transform: translate(-50%, -50%);
+}
+.container {
+    
+    background: wheat;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-animation: orbit2 12s linear infinite;
+       -moz-animation: orbit2 12s linear infinite;
+         -o-animation: orbit2 12s linear infinite;
+            animation: orbit2 12s linear infinite; 
+}
+.tilt {
+    transform: rotateX(58deg);
+}
+.aim {
+    background: linear-gradient(to right, #100000, #1f0000);
+    box-shadow: -4px 1px 12.5px 15px #100101,
+    -9px 2px 3px 17.5px #1d170f,
+    -9px 1px 20px 20px #050000,
+    0 0 14px 22.5px #1f1919,
+    0px 0px 20px 25px #1f1c18,
+    1px -1px 8px 27.5px #0a0301,
+    0 0 20px 30px #140000,
+    0 0 20px 32.5px #050000,
+    0 0 20px 35px #000000,
+    0 0 20px 37.5px #321313,
+    0 0 20px 40px #000000,
+    -11px -1px 14px 42.5px #2a0000de,
+    0px 0px 20px 45px #171717;
+    transition: box-shadow 500ms ease-in-out;
+    animation: spinner-animation 1.5s infinite linear;
+}
+@-webkit-keyframes spinner-animation {0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
+@keyframes spinner-animation {0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
+
+@-webkit-keyframes orbit2 {
+	from { 	-webkit-transform: rotate(0deg) translateX(300px) rotate(0deg); }
+	to   {  -webkit-transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+}
+
+@-moz-keyframes orbit2 {
+	from { 	-moz-transform: rotate(0deg) translateX(300px) rotate(0deg); }
+	to   {  -moz-transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+}
+
+@-o-keyframes orbit2 {
+	from { 	-o-transform: rotate(0deg) translateX(300px) rotate(0deg); }
+	to   {  -o-transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+}
+
+@keyframes orbit2 {
+    0%  { -webkit-transform: rotate(0deg) translateX(280px) translateY(150px) rotate(0deg) scale(1); }
+    6.25%  { -webkit-transform: rotate(22.5deg) translateX(280px) translateY(150px) rotate(-22.5deg) scale(.9); }
+    12.5%  { -webkit-transform: rotate(45deg) translateX(280px) translateY(150px) rotate(-45deg) scale(.8); }
+    18.75%  { -webkit-transform: rotate(67.5deg) translateX(280px) translateY(150px) rotate(-67.5deg) scale(.7); }
+    25%  { -webkit-transform: rotate(90deg) translateX(280px) translateY(150px) rotate(-90deg) scale(.6); }
+    31.25%  { -webkit-transform: rotate(112.5deg) translateX(280px) translateY(150px) rotate(-112.5deg) scale(.5); }
+    37.5%  { -webkit-transform: rotate(135deg) translateX(280px) translateY(150px) rotate(-135deg) scale(.4); }
+    43.75%  { -webkit-transform: rotate(157.5deg) translateX(280px) translateY(150px) rotate(-157.5deg) scale(.3); }
+    50%  { -webkit-transform: rotate(180deg) translateX(280px) translateY(150px) rotate(-180deg) scale(.3); }
+    56.25%  { -webkit-transform: rotate(202.5deg) translateX(280px) translateY(150px) rotate(-202.5deg) scale(.3); }
+    62.5%  { -webkit-transform: rotate(225deg) translateX(280px) translateY(150px) rotate(-225deg) scale(.4); }
+    68.75%  { -webkit-transform: rotate(247.5deg) translateX(280px) translateY(150px) rotate(-247.5deg) scale(.5); }
+    75%  { -webkit-transform: rotate(270deg) translateX(280px) translateY(150px) rotate(-270deg) scale(.6); }
+    81.25%  { -webkit-transform: rotate(292.5deg) translateX(280px) translateY(150px) rotate(-292.5deg) scale(.7); }
+    87.5%  { -webkit-transform: rotate(315deg) translateX(280px) translateY(150px) rotate(-315deg) scale(.8); }
+    93.75%  { -webkit-transform: rotate(337.5deg) translateX(280px) translateY(150px) rotate(-337.5deg) scale(.9); }
+    100%  { -webkit-transform: rotate(360deg) translateX(280px) translateY(150px) rotate(-360deg) scale(1); }
+}

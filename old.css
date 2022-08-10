@@ -1,0 +1,40 @@
+.aim:hover {
+    box-shadow: 0 0 0 10px white,
+    0 0 0 15px black,
+    0 0 0 20px white,
+    0 0 0 25px black,
+    0 0 0 30px white,
+    0 0 0 35px black,
+    0 0 0 40px white,
+    0 0 0 45px black;
+    
+    box-shadow: 
+    -4px 1px 10px 15px #666666,
+    0 0 0 20px #d8d1d1, 
+    -8px 1px 15px 25px black, 
+    0 0 0 30px #e3dfdf,
+    0px 0px 20px 35px #1f1c18, 
+    1px -1px 8px 40px #fff9f8, 
+    0 0 20px 45px #000000, 
+    0 0 20px 50px #666666, 
+    0 0 20px 60px #666666, 
+    0 0 20px 70px #3c3a3a,
+    0 0 20px 80px #666666,
+    0 0 20px 90px #666666, 
+    0 0 20px 100px #343131;
+    
+    box-shadow: -4px 1px 10px 15px #100101,
+    -9px 2px 3px 20px #1d170f,
+    -9px 1px 20px 25px #050000,
+    0 0 3px 30px #777777,
+    0px 0px 20px 35px #1f1c18,
+    1px -1px 8px 40px #fffaf9,
+    0 0 20px 45px #000000,
+    0 0 20px 50px #666666,
+    0 0 20px 60px #666666,
+    0 0 20px 70px #3c3a3a,
+    0 0 20px 80px #666666,
+    0 0 20px 90px #666666,
+    0 0 20px 100px #343131;
+
+}
